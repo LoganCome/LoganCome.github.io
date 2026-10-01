@@ -1,11 +1,10 @@
-.visitor-statistics{margin-top:2.4em;padding:1.3em 1.4em;border:1px solid #dce5ef;border-radius:8px;background:#f7f9fc}
-.page__content .visitor-statistics h2{margin:0 0 1em;padding:0;border:0;color:#224b8d;font-size:1.15em}
-.visitor-statistics__metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:0}
-.visitor-statistics__metric{display:flex;flex-direction:column;gap:5px;min-width:0}
-.visitor-statistics__metric+.visitor-statistics__metric{border-left:1px solid #dce5ef;padding-left:24px}
-.visitor-statistics dt{font-size:.85em;color:#586b80;font-weight:400}
-.visitor-statistics dd{margin:0;font-size:1.65em;line-height:1.3;font-weight:700;color:#224b8d;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
-.page__content .visitor-statistics__note{margin:1em 0 0;font-size:.75em;line-height:1.6;color:#657487}
-.visitor-statistics__credit{white-space:nowrap}
-@media(max-width:440px){.visitor-statistics{padding:1em}.visitor-statistics__metrics{gap:16px}.visitor-statistics__metric+.visitor-statistics__metric{padding-left:16px}}
+/* Keep the counter on the final line, below the footer credits. */
+.updated-footer>a[href="#about-me"]{margin-left:auto}
+.visitor-statistics{flex-basis:100%;display:flex;justify-content:center;align-items:baseline;flex-wrap:wrap;column-gap:.6em;row-gap:.1em;margin-top:2px;color:#66717d;font-size:12px;line-height:1.5;font-weight:400}
+.visitor-statistics__metric{white-space:nowrap}
+.visitor-statistics [data-stats-value]{font-variant-numeric:tabular-nums}
+.visitor-statistics a{color:inherit;text-decoration:none}
+.visitor-statistics a:hover{text-decoration:underline}
+.visitor-statistics [data-stats-status]{flex-basis:100%;text-align:center;font-size:11px}
+.visitor-statistics[data-state="ready"] [data-stats-status],.visitor-statistics[data-state="loading"] [data-stats-status]{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 @media print{.visitor-statistics{display:none}}

@@ -39,9 +39,10 @@
   });
   values.forEach(value => observer.observe(value, { childList: true, characterData: true, subtree: true }));
 
-  // Busuanzi stores shared totals remotely; no account or browser-local counter is needed.
+  // Official client for the open-source Vercount service.
+  // https://github.com/evannotfound/vercount
   const script = document.createElement('script');
-  script.src = 'https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js';
+  script.src = 'https://events.vercount.one/js';
   script.async = true;
   script.addEventListener('error', () => {
     window.clearTimeout(timeout);

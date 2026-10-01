@@ -13,18 +13,27 @@ Based on [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io). See
 Browser icons, the root `favicon.ico`, and mobile home-screen icons use the current
 portrait from `images/icon.jpg`. Versioned icon URLs refresh cached template icons.
 
-The Visitor Statistics panel uses [Busuanzi](https://busuanzi.ibruce.info/) for
-remote, site-wide page-view and visitor totals. Repeat page loads increase page
-views; visitor counts follow the provider's counting rules and are estimates.
-Historical traffic from before the service was installed cannot be reconstructed.
+The small counter is the final line of the footer, below the credits. It uses
+[Vercount](https://github.com/evannotfound/vercount), an open-source project licensed
+under GPL-3.0, through its official hosted client at
+`https://events.vercount.one/js`. There is no large statistics heading or card.
 
-The service loads only on `https://logancome.github.io`, so local and downloaded
-previews do not add visits. Loading failures display an unavailable message rather
-than fabricated numbers. Counts depend on the external service being reachable;
-there is no separate analytics dashboard or account to configure. This is a public
-traffic indicator, not a source for auditing or security decisions.
+Site-wide views include repeat page loads. Vercount estimates visitors by marking
+the browser with a first-party cookie; it also caches the last returned totals in
+local storage. Counts are maintained by its remote service, not a local counter.
+No account or separate server is needed for this public counter. The optional
+Vercount administration dashboard has not been configured.
 
-The browser contacts Busuanzi to record visits (including the site referrer and
-the connection IP, as needed by the service). See the provider's site for details.
+The provider was switched from the original Busuanzi on 2026-10-01. Although the
+Vercount documentation describes automatic import, our first live response began
+at 1 view / 1 visitor, so do not assume previous totals have been migrated.
+Historical traffic from before tracking was installed cannot be reconstructed.
+
+Tracking loads only on `https://logancome.github.io`; local previews do not record
+visits. The browser sends its current page URL to the Vercount service. The official
+client can display cached totals when requests fail. If it cannot supply counts,
+the footer retains dashes with a short unavailable message. Service availability
+is controlled by the external provider.
+
 Styling and loading behavior are in `assets/css/visitor-stats.css` and
 `assets/js/visitor-stats.js`.
