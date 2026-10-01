@@ -13,7 +13,9 @@ Based on [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io). See
 Browser icons, the root `favicon.ico`, and mobile home-screen icons use the current
 portrait from `images/icon.jpg`. Versioned icon URLs refresh cached template icons.
 
-The small counter is the final line of the footer, below the credits. It uses
+The footer places credits on the left, the motto “创新无极限，敢为天下先” in
+the center, and visitor statistics with the back-to-top link on the right. These
+share one row on wide screens and stack on mobile. The small counter uses
 [Vercount](https://github.com/evannotfound/vercount), an open-source project licensed
 under GPL-3.0, through its official hosted client at
 `https://events.vercount.one/js`. There is no large statistics heading or card.
