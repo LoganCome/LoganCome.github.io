@@ -141,3 +141,9 @@ a:focus-visible,button:focus-visible{outline:3px solid #5d8ec7;outline-offset:4p
 .testbed-feature figure{max-width:840px}
 @media(min-width:768px) and (max-width:1100px){.paper-box{grid-template-columns:220px minmax(0,1fr);gap:18px}.paper-box .paper-box-text{min-height:146.667px}}
 @media(max-width:767px){.paper-box{grid-template-columns:1fr;gap:14px}.paper-box .paper-box-image{width:100%;max-width:320px}.paper-box .paper-box-image img{max-height:none}.paper-box .paper-box-text{padding-top:0;min-height:0}.testbed-feature figure{max-width:100%}}
+
+/* Compact supporting information on consolidated project cards. */
+.project-details{margin-top:.35em;font-size:.94em}
+.project-details summary{cursor:pointer;color:#495b70}
+.project-details[open] summary{margin-bottom:.5em}
+.project-details summary:focus-visible{outline:3px solid #5d8ec7;outline-offset:3px}
