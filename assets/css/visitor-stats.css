@@ -12,4 +12,5 @@
 .visitor-statistics [data-stats-status]{flex-basis:100%;text-align:right;font-size:11px}
 .visitor-statistics[data-state="ready"] [data-stats-status],.visitor-statistics[data-state="loading"] [data-stats-status]{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 @media(max-width:899px){.updated-footer{grid-template-columns:1fr;gap:10px}.footer-credits{text-align:center}.footer-right{justify-content:center;flex-wrap:wrap;gap:8px 16px}.visitor-statistics{justify-content:center}.visitor-statistics [data-stats-status]{text-align:center}}
+@media(max-width:899px){.footer-back-to-top{margin-left:auto}}
 @media print{.visitor-statistics{display:none}}
