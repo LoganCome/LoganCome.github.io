@@ -147,3 +147,10 @@ a:focus-visible,button:focus-visible{outline:3px solid #5d8ec7;outline-offset:4p
 .project-details summary{cursor:pointer;color:#495b70}
 .project-details[open] summary{margin-bottom:.5em}
 .project-details summary:focus-visible{outline:3px solid #5d8ec7;outline-offset:3px}
+
+/* Each honor pairs its geographic/institutional scope with its award level. */
+.page__content .honors-list{list-style:none;padding-left:0}
+.honors-list>li{display:grid;grid-template-columns:50px minmax(0,1fr);column-gap:10px;margin-bottom:.6em;line-height:1.6}
+.honor-icons{display:flex;align-items:center;gap:6px;padding-top:calc((1.6em - 22px)/2)}
+.honor-icon{display:block;flex:none;width:22px;height:22px;align-self:flex-start}
+.honor-text{min-width:0;overflow-wrap:break-word}
